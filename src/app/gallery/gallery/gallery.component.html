@@ -1,0 +1,7 @@
+<cdk-virtual-scroll-viewport itemSize="42" class="viewport">
+  <mat-grid-list cols="4" rowHeight="1:1">
+    <mat-grid-tile *cdkVirtualFor="let user of users$ | async">
+      <img [src]="user.picture.large">
+    </mat-grid-tile>
+  </mat-grid-list>
+</cdk-virtual-scroll-viewport>
